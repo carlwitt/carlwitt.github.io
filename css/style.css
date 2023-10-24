@@ -1,7 +1,7 @@
 /* Use the carlito font for the whole page */
 body {
     font-family: 'Carlito', sans-serif;
-    
+    background-color: #3876BF;
     margin: 0;
     padding: 0;
     
@@ -9,8 +9,11 @@ body {
 /* Content should be centered and 80% width and full height */
 .content {
     margin: 0 auto;
+    margin-top: 2em;
     width: 80%;
-    background-color: #eee;
+    background-color: #E1AA74;
+    border-radius: 10px 10px 0 0;
+    color: #192655;
     min-height: 100vh;
     padding: 2em;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
@@ -24,21 +27,34 @@ body {
 /* Both tables should be full width */
 table {
     width: 100%;
+    /* zero spacing between table cells */
+    border-collapse: collapse;
 }
 /* The table header should be left aligned */
 th {
     text-align: left;
+    background-color: #F3F0CA;
+    padding: 0.5em 0.2em;
+}
+
+
+/* first table row element should be left centered */
+td:first-child {
+    text-align: center;
 }
 /* Table rows should alternate between white and light grey */
 tr:nth-child(even) {
-    background-color: #ddd;
+    background-color: #F3F0CA;
 }
 /* Second table should have extra top spacing */
 table + table {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 /* Highlight clicked links with italics */
+a {
+    color: #3876BF;
+}
 a:visited {
-    color: inherit;
+    color: #3876BF;
 }
